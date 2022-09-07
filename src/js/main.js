@@ -25,11 +25,17 @@ const appendPopUp = () => {
 };
 
 const resetCounter = () => {
+  resetButton.classList.add('reset-action');
   localStorage.setItem('counter', 1);
   counter = 1;
-  resetButton.classList.remove('active');
   document.getElementById('counter').innerHTML =
     getCounter() < 2 ? `${getCounter()} time` : `${getCounter()} times`;
+  setTimeout(resetAnimation, 600);
+};
+
+const resetAnimation = () => {
+  resetButton.classList.remove('reset-action');
+  resetButton.classList.remove('active');
 };
 
 const outsideClick = (e) => {
