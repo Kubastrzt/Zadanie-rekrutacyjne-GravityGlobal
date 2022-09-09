@@ -58,6 +58,11 @@ img {
   font-weight: 700;
   cursor: pointer;
   font-family: 'Roboto';
+  transition-duration: 0.1s;
+}
+.popup-button:hover {
+  background-color: #c9a38e;
+  transition-duration: 0.1s;
 }
 .close-modal-button {
   background-image: url(../../images/x-icon.svg);
@@ -105,10 +110,7 @@ img {
 }
 @keyframes reset {
   0% {
-  }
-  5% {
-    color: #e4c1ae;
-    transform: translate(100%, 100%);
+    color: transparent;
   }
   9% {
     transform: scale(20);

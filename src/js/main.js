@@ -26,8 +26,8 @@ const appendPopUp = () => {
 
 const resetCounter = () => {
   resetButton.classList.add('reset-action');
-  localStorage.setItem('counter', 1);
-  counter = 1;
+  localStorage.setItem('counter', 0);
+  counter = 0;
   document.getElementById('counter').innerHTML =
     getCounter() < 2 ? `${getCounter()} time` : `${getCounter()} times`;
   setTimeout(resetAnimation, 600);
